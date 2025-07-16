@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+ {% block content %}
+<div class="products">
+        {% for product in ProductDB %}
+      <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price }}</p>
+      </div>
+      {% endfor %}
+</div>
+{% endblock %}

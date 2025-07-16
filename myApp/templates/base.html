@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .category {
+      width: 30%;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .products {
+      width: 70%;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      width: 30%;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 0;
+    }
+
+        header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MyShop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="category">
+      <h2>Categories</h2>
+      <ul>
+        <li>Clothing</li>
+        <li>Electronics</li>
+        <li>Books</li>
+        <li>Accessories</li>
+      </ul>
+    </div>
+
+      {% block content %}
+  {% endblock %}
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 MyShop. All rights reserved.
+  </footer>
+</body>
+</html>
